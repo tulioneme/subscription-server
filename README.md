@@ -15,17 +15,29 @@
 ### Running
 
 ```bash
-# Clone this repository
-$ git clone https://github.com/tulioneme/subscription-server.git
 
-# Install dependencies
-$ npm install
+# 1. Clone this repository
+git clone https://github.com/tulioneme/subscription-server.git
+cd subscription-server
 
-# Run the application in development mode
-$ npm run dev
+# 2. Install dependencies
+npm install
 
-# The server will start on port 3333 - access <http://localhost:3333>
+# 3. Start Docker containers (PostgreSQL & Redis)
+docker-compose up -d  # Runs in detached mode (background)
 
-# Build the application
-$ npm run build
+# 4. Configure environment variables in the `.env` file
+echo '"PORT=3333"
+POSTGRES_URL="postgresql://docker:docker@localhost:5432/connect"
+REDIS_URL="redis://localhost:6379"
+WEB_URL="http://localhost:3000"' > .env
+
+# 5. Run the application in development mode
+npm run dev
+
+# The server will start on: http://localhost:3000
+
+# 6. (Optional) Build the application for production
+npm run build
+
 ```
