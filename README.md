@@ -2,7 +2,7 @@
 
 <p align="center">A simple and efficient backend application for managing subscriptions. Designed with a focus on backend performance, scalability, and maintainability.</p>
 
-### 🛠 Techonolgies
+### Techonolgies
 
 - [Node.js](https://nodejs.org/en/)
 - [TypeScript](https://www.typescriptlang.org/)
@@ -12,7 +12,7 @@
 - [Redis](https://redis.io/)
 - [Docker](https://www.docker.com/)
 
-### 🛠 Running
+### Running
 
 ```bash
 # Clone this repository
