@@ -16,7 +16,7 @@
 
 ```bash
 # Clone this repository
-$ git clone <https://github.com/tulioneme/subscription-server.git>
+$ git clone https://github.com/tulioneme/subscription-server.git
 
 # Install dependencies
 $ npm install
